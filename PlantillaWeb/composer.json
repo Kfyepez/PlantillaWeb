@@ -19,7 +19,10 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
-        "drupal/core-recommended": "^9.3"
+        "drupal/core-recommended": "^9.3",
+        "drupal/menu_block": "1.7",
+        "drupal/menus_attribute": "1.2",
+        "drupal/superfish": "1.4"
     },
     "conflict": {
         "drupal/drupal": "*"
