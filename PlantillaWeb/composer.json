@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^9.3",
         "drupal/menu_block": "1.7",
         "drupal/menus_attribute": "1.2",
+        "drupal/simple_gmap": "3.0",
         "drupal/superfish": "1.4"
     },
     "conflict": {
