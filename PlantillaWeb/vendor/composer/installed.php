@@ -85,6 +85,15 @@
                 0 => '9.3.0',
             ),
         ),
+        'drupal/asset_injector' => array(
+            'pretty_version' => '2.8.0',
+            'version' => '2.8.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/asset_injector',
+            'aliases' => array(),
+            'reference' => '8.x-2.8',
+            'dev_requirement' => false,
+        ),
         'drupal/automated_cron' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -523,6 +532,15 @@
                 0 => '9.3.0',
             ),
         ),
+        'drupal/layout_builder_component_attributes' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/layout_builder_component_attributes',
+            'aliases' => array(),
+            'reference' => '2.0.0',
+            'dev_requirement' => false,
+        ),
         'drupal/layout_discovery' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -920,6 +938,15 @@
             'install_path' => __DIR__ . '/../../web/libraries/superfish',
             'aliases' => array(),
             'reference' => '80a0a484b727e9fbe6b0ee609f80e10e5e158683',
+            'dev_requirement' => false,
+        ),
+        'neilime/php-css-lint' => array(
+            'pretty_version' => 'v3.0.0',
+            'version' => '3.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../neilime/php-css-lint',
+            'aliases' => array(),
+            'reference' => '5dc9dd1d3238d29a9ff210cd7d934cfee00e5e96',
             'dev_requirement' => false,
         ),
         'pear/archive_tar' => array(
