@@ -1,0 +1,47 @@
+{% set module_path = _self|split('/templates') %}
+<div class="accessibility--controls">
+  {% if color_contrast %}
+    
+      {% if color_contrast_label %}
+        <span class="accessibility--label">{{ color_contrast_label }}</span>
+      {% endif %}
+      <button type="button" class="accessibility--control button__normal" data-accessibility-feature="colorContrast" data-accessibility-unit="color">
+        <h5>☀️</h5>
+        <span class="visually-hidden">{{ 'Switch to color theme'|t }}</span>
+      </button>
+      <button type="button" class="accessibility--control button__blue" data-accessibility-feature="colorContrast" data-accessibility-unit="blue">
+        <h5>🌊</h5>
+        <span class="visually-hidden">{{ 'Switch to blue theme'|t }}</span>
+      </button>
+      <button type="button" class="accessibility--control button__hivis" data-accessibility-feature="colorContrast" data-accessibility-unit="hivis">
+        <h5>🌙</h5>
+        <span class="visually-hidden">{{ 'Switch to high visibility theme'|t }}</span>
+      </button>
+      <button type="button" class="accessibility--control button__soft" data-accessibility-feature="colorContrast" data-accessibility-unit="soft">
+        <h5>🌱</h5>
+        <span class="visually-hidden">{{ 'Switch to soft theme'|t }}</span>
+      </button>
+    
+  {% endif %}
+
+  {% if text_resize %}
+    <div class="text-sizing">
+      {% if text_resize_label %}
+        <span class="accessibility--label">{{ text_resize_label }}</span>
+      {% endif %}
+      <button type="button" class="accessibility--control button__small" data-accessibility-feature="fontSize" data-accessibility-unit="1">
+        A
+        <span class="visually-hidden">{{ 'Set font size to 100%'|t }}</span>
+      </button>
+      <button type="button" class="accessibility--control button__medium" data-accessibility-feature="fontSize" data-accessibility-unit="1.25">
+        A
+        <span class="visually-hidden">{{ 'Set font size to 125%'|t }}</span>
+      </button>
+      <button type="button" class="accessibility--control button__large" data-accessibility-feature="fontSize" data-accessibility-unit="1.5">
+        A
+        <span class="visually-hidden">{{ 'Set font size to 150%'|t }}</span>
+      </button>
+    </div>
+  {% endif %}
+                
+</div>
